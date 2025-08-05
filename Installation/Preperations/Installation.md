@@ -30,3 +30,16 @@ This is already enough for homelabs and home testing environments.
 `sudo mysql -u root -p`
 
 (-u is the user and -p is the password. For the innitial setup, do **not** adapt these, as MySQL will ask you to enter the required data with two seperate input fields)  
+
+## Configure the VM 
+It is important to give the Icinga Master a static IP Adress for several reasons. Head over into the Netplan Directory and configure the .yaml to your needs.
+
+'sudo -i'
+'cd /etc/netplan'
+'nano / vi 50-xxx.yml'
+
+After you have setup the netplan you have to let Ubuntu Check the new Configuration with the following command:
+
+'systemctl netplan try'
+
+Afterwards check via 'ip a' if your selected IP Adress has been correctly configured.
