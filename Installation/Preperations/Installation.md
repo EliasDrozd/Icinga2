@@ -1,4 +1,4 @@
-7# VM-Installation
+# VM-Installation
 
 ## VM-Settings / Recommendations
 
