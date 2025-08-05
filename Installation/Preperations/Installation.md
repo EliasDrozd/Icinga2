@@ -1,4 +1,4 @@
-# VM-Installation
+7# VM-Installation
 
 ## VM-Settings / Recommendations
 
@@ -34,12 +34,12 @@ This is already enough for homelabs and home testing environments.
 ## Configure the VM 
 It is important to give the Icinga Master a static IP Adress for several reasons. Head over into the Netplan Directory and configure the .yaml to your needs.
 
-'sudo -i'
-'cd /etc/netplan'
-'nano / vi 50-xxx.yml'
+`sudo -i`
+`cd /etc/netplan`
+`nano / vi 50-xxx.yml`
 
 After you have setup the netplan you have to let Ubuntu Check the new Configuration with the following command:
 
-'systemctl netplan try'
+`systemctl netplan try`
 
-Afterwards check via 'ip a' if your selected IP Adress has been correctly configured.
+Afterwards check via `ip a`, if your selected IP Adress has been correctly configured.
